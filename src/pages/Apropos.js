@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from '../composants/composants_réutilisable/composant_header/header';
-import Paysage from '../composants/composants_réutilisable/composant_paysage/paysage';
-import Footer from '../composants/composants_réutilisable/composant_footer/footer';
+import Header from '../composants/composants_reutilisable/composant_header/header';
+import Paysage from '../composants/composants_reutilisable/composant_paysage/paysage';
+import Footer from '../composants/composants_reutilisable/composant_footer/footer';
 import Propos from '../composants/composant_aPropos/aPropos';
 
 
