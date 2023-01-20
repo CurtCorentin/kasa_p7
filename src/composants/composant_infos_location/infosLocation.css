@@ -152,8 +152,8 @@ margin-bottom: 10px;
         height:30px;
         width:30px;}
         .nomProfil{margin-right: 0px;margin-right:10px ;margin-top: 15px;text-align: right;}
-        .carrousselDown{top : 30%;}
-        .carrousselUp{top : 30%;}
+        .carrousselDown{top : 40%;}
+        .carrousselUp{top : 40%;}
         .tags{flex-direction: column;}
         .tag:nth-child(2),.tag:nth-child(3){margin-left: 0;}
         .tag{margin-left: 0;margin-top: 10px;}
