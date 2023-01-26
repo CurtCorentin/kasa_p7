@@ -30,12 +30,12 @@ a{ color:#FF6060;margin-right: 20px; }
 @media (max-width: 768px) {
 
 
-    .NAV{font-size:1.2rem;
+    .NAV{font-size:1rem;
         margin-top: 40px;
         justify-content:right;
     }
     .TITRE{
-        font-size:3rem;
+        font-size:2rem;
         margin-top: 20px;
         }
     
