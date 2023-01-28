@@ -8,34 +8,29 @@ margin-right:10%;}
 
 
 
-.carrousselDown{
-  left: 15%;
+.carrousselDown,.carrousselUp{
+  
     position: absolute;
 background : none;
 border:none;
-font-size: 7em;
+font-size: 6em;
 color:black;
 opacity:0.5;
-margin-top:170px;
+margin-top:130px;
 }
 
+.carrousselDown{left: 20%;}
 .carrousselUp{
-   right:15%;
-position:absolute;
-margin-top:170px;
-background : none;
-opacity:0.5;
-border:none;
-font-size: 7em;
-color:black;
+   right:20%;
+
 }
 
 .imgInfo {
-    width:80%;
-    margin-left: 10%;
-    margin-right: 10%;
+    width:70%;
+    margin-left: 15%;
+    margin-right:15%;
 flex-direction: column;
-height:450px;
+height:350px;
 border-radius:20px
 }
 
@@ -47,7 +42,7 @@ width:100%;
 
 margin-top:30px;
 color: #FF6060;
-font-size: 1.7rem;}
+font-size: 1.3rem;}
 
 .location{margin-top:10px;}
 
@@ -73,7 +68,7 @@ justify-content: space-around;
 width:97%;
 margin-right: 1px;
 margin-top:10px;
-font-size: 2rem;}
+font-size: 1.5rem;}
 
 .profil{display:flex;
 flex-direction:row;
@@ -114,7 +109,7 @@ min-height:300px;
 
 .description{width: 90%;margin-right:10%;text-align: justify;text-justify: inter-word;}
 .equipement{width: 90%;margin-left:10%;margin-bottom:3px;}
-.spanDescription,.spanEquipement{margin-bottom:30px;font-size: 1.3rem;}
+.spanDescription,.spanEquipement{margin-bottom:30px;font-size: 1rem;}
 
 
 
@@ -123,34 +118,38 @@ min-height:50px;
 border-radius: 5px;
 border:none;
 width:100%;
-font-size: 1.3rem;
+font-size: 1rem;
 display: flex;
 justify-content: space-between;
 margin-top: 30px;
 margin-bottom: 10px;
 }
 
-.left{margin-left: 10px;margin-top: 8px;font-size:1.5em;}
-.right{margin-right: 10px;margin-top: 8px;font-size:1.5em;}
+.left{margin-left: 10px;margin-top: 10px;}
+.right{margin-right: 10px;margin-top: 15px;font-weight: bold;}
+
 
 
 @media screen and (max-width: 790px){
     .imgInfo{height: 300px;
-    margin-top: 20px;}
+    margin-top: 20px;
+}
+
+.carrousselDown,.carrousselUp{font-size: 5em;margin-top:130px}
+
     .displayProfil{font-size:1.2em;}
     .displayTitre{font-size:1.2em;}
     .displayBlock{font-size: 0.9em;}
 
     #Description,#Equipement{margin-top: 20px;}
-.left,.right{margin-top: 15px;font-size: 0.7em ;}
+.left,.right{margin-top: 15px;font-size: 1em ;}
     .star{
   margin-left: 2px;
  
         height:30px;
         width:30px;}
         .nomProfil{margin-right: 0px;margin-right:10px ;margin-top: 15px;text-align: right;}
-        .carrousselDown{margin-top:110px;}
-        .carrousselUp{margin-top:110px}
+  
         .tags{flex-direction: column;}
         .tag:nth-child(2),.tag:nth-child(3){margin-left: 0;}
         .tag{margin-left: 0;margin-top: 10px;}

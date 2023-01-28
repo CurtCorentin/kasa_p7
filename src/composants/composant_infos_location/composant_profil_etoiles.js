@@ -5,6 +5,7 @@ const etoiles = () => {
     const loc = IdLocation([0]);////infos location
     
    const AvisR = [];
+   
     for (let i=0; i<loc.rating; i++)
      {AvisR.push(<div key={i} className="star starOrange"></div>);}
 
