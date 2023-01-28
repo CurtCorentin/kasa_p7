@@ -39,6 +39,8 @@ height:450px;
 border-radius:20px
 }
 
+
+.slider__number{display: none;}
 .displayTitre{display:flex;
 flex-direction: column;
 width:100%;
@@ -80,7 +82,9 @@ color:#FF6060;
 }
 
 .imgProfil{height:60px;width:60px;border-radius: 50px;
-background-color: grey;}
+}
+
+
 
 .nomProfil{margin-right: 10px;margin-top: 10px;text-align: center;}
 

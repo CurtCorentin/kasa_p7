@@ -28,11 +28,7 @@ return (
       {loc.pictures.map((slide, index) => (
          <div
             key={index} // mise en place du slider avec affichage conditionnel et opacity=1 quand le slide en cours vaut l'index
-            className={
-               current === index
-                  ? "slider bl-msk wh-msk active-anim"
-                  : "slider bl-msk wh-msk"
-            }
+       
          >
             {index === current && <img className='imgInfo' src={slide} alt="appartement à louer" />}
             {index === current && (

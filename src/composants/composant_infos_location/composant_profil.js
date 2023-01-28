@@ -6,7 +6,9 @@ const Composant_profil = () => {
     return (
       
         <div className="displayProfil">
-        <div className="profil"> <div className="nomProfil"> {loc.host.name} </div><div className="imgProfil"></div> 
+        <div className="profil">
+             <div className="nomProfil"> {loc.host.name} </div>
+             <img src={loc.host.picture} className="imgProfil" alt={loc.host.name}/>
         </div>
         <div className="displayStar" id="displayStar">
            {<Etoiles />}
