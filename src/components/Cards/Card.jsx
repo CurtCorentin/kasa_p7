@@ -1,4 +1,5 @@
-export default function Card({ cover, title }) { //les cards de locations récupèrent les couvertures et titres en props depuis Home
+// CARDS // HOME // props de du composant parent
+export default function Card({ cover, title }) { 
 	return (
 		<article className="card-logement">
 			<img src={cover} alt="location" />
