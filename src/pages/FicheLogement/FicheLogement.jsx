@@ -20,7 +20,7 @@ export default function FicheLogement() {
 
 			const picked = res.data.find(({ id }) => id === params.id);
 
-			res.data.map(() => setPickedAppart(picked));
+			setPickedAppart(picked)
 			if (picked === undefined) {
 				navigate("/404", { state: { message: "Can't get data" } }); //renvoi vers la page 404 en cas d'URL de logement invalide
 			}
@@ -37,10 +37,10 @@ export default function FicheLogement() {
 				{item}
 			</li>
 		));
-		console.log(pickedAppart)
+		
 	return (
 		pickedAppart && (
-			<div key={params.id} className="fiche-container">
+			<div className="fiche-container">
 				<Carrousel slides={slidePics} />
 				<section className="hostInfo-container">
 					<div className="title-tags-container">

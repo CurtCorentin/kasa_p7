@@ -3,7 +3,7 @@ export default function Host(props) {
 		<aside className="host-comp">
 			<div className="host-name">{props.hostName}</div>
 			<div className="hostPicture">
-				<img src={props.hostPic} alt={props.id} />
+				<img src={props.hostPic} alt={props.name} />
 			</div>
 		</aside>
 	);

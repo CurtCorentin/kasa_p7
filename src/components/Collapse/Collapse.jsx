@@ -31,7 +31,7 @@ export default function Collapse(props) {
 				className={toggle ? "collapse__toggle animated" : "collapse__toggle"}
 				style={{ height: toggle ? `${heightEl}` : "0px" }}>
 
-				<p >{props.aboutText}</p>
+				<p className="aboutText" >{props.aboutText}</p>
 
 			</div>
 		</div>

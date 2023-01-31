@@ -40,12 +40,12 @@
 
 		p {
 			margin: 0;
-			padding: 22px 15px;
+			padding: 15px 15px;
 			pointer-events: none;
 			@include font(12px, 400);
 
 			@media screen and (min-width: $breakpoint-desktop) {
-				@include font(24px, 400);
+				@include font(20px, 400);
 			}
 		}
 	}
