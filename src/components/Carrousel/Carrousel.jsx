@@ -3,21 +3,24 @@ import left from "../../assets/images/vector-left.svg";
 import right from "../../assets/images/vector-right.svg";
 
 export default function Carrousel({ slides }) {
-	const [current, setCurrent] = useState(0); //je définie l'index du premier slide à 0
-	const length = slides.length; // longueur du tableau de slides
+//HOOK POUR CREER INDEX
+const [current, setCurrent] = useState(0); 
 
-	const nextSlide = () => {
-		setCurrent(current === length - 1 ? 0 : current + 1); // on repart au premier slide quand on arrive au dernier
-	};
-	const prevSlide = () => {
-		setCurrent(current === 0 ? length - 1 : current - 1); // on repart au dernier slide quand on est au premier
-	};
+//JE RECUPERE LA LONGUEUR DU TABLEAU
+const length = slides.length; 
 
-	return (
+//LOGIQUE POUR REPARTIR AU PREMIER QUAND ON ARRIVE AU DERNIER 
+const nextSlide = () => {setCurrent(current === length - 1 ? 0 : current + 1);};
+
+//LOGIQUE POUR REPARTIR AU DERNIER QUAND ON ARRIVE AU  PREMIER
+const prevSlide = () => {setCurrent(current === 0 ? length - 1 : current - 1);};
+
+return (
+//LOGIQUE POUR AFFICHAGE DES FLECHES SEULEMENT SI IL Y A PLUS D'UNE IMAGE
 		<section id="carrousel-container">
 			{length > 1 && (
 				<img
-					src={left} //Affichage des flèches seulement si length > 1
+					src={left} 
 					alt="gauche"
 					onClick={prevSlide}
 					className="leftArrow"
@@ -31,9 +34,12 @@ export default function Carrousel({ slides }) {
 					className="rightArrow"
 				/>
 			)}
-			{slides.map((slide, index) => (
+
+			{///////////////////////////////////////
+			slides.map((slide, index) => (
+	
 				<div
-					key={index} // mise en place du slider avec affichage conditionnel et opacity=1 quand le slide en cours vaut l'index
+		           key={index} 
 					className={
 						current === index
 							? "slider bl-msk wh-msk active-anim"
@@ -41,11 +47,6 @@ export default function Carrousel({ slides }) {
 					}
 				>
 					{index === current && <img src={slide} alt="appartement à louer" />}
-					{index === current && (
-						<span className="slider__number">
-							{current + 1}/{length}
-						</span>
-					)}
 				</div>
 			))}
 		</section>

@@ -9,7 +9,7 @@ export default function Home() {
  //REQUETE AXIOS EN AMONT POUR UNE FUTUR API
 	useEffect(() => {
 		axios.get("/logements.json").then((res) => setData(res.data));
-	}, []);
+	}, []);// array vide du useEffect pour ne lancer qu'une seule fois
 	
 	return (
 		<>

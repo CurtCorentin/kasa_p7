@@ -44,6 +44,7 @@
 
     &__number {
         display: none;
+    
 
         @media screen and (min-width: $breakpoint-desktop) {
             display: block;
