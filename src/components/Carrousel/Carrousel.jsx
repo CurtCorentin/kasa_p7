@@ -47,6 +47,11 @@ return (
 					}
 				>
 					{index === current && <img src={slide} alt="appartement à louer" />}
+					{index === current && (
+						<span className="slider__number">
+							{current + 1}/{length}
+						</span>
+					)}
 				</div>
 			))}
 		</section>

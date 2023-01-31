@@ -43,17 +43,15 @@
     }
 
     &__number {
-        display: none;
-    
+     
 
-        @media screen and (min-width: $breakpoint-desktop) {
             display: block;
             position: absolute;
             @include font(18px, 500);
             color: $tertiary-color;
             left: 48%;
             top: 86%;
-        }
+       
     }
 }
 
